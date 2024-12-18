@@ -57,12 +57,12 @@ def generate_certificates(input_file, female_template, male_template, offset_x, 
             number_text = f"NR: {current_number:06}"
             number_font_size = 18
             number_font = ImageFont.truetype(font_path, number_font_size)
-            number_position = (40, image_height - 50)
+            number_position = (90, image_height - 90)
             draw.text(number_position, number_text, fill="lightgray", font=number_font)
             current_number += 1
 
         # Utwórz nazwę pliku i zapisz certyfikat w wybranym folderze
-        output_filename = os.path.join(output_directory, f"certyfikat_{first_name}_{last_name}.png")
+        output_filename = os.path.join(output_directory, f"{first_name}_{last_name}.png")
         cert_image.save(output_filename)
         print(f"Zapisano: {output_filename}, {number_text}")
 
