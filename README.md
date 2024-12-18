@@ -20,6 +20,8 @@ Następnie wybrać należy folder, w którym zapisane będą certyfikaty, a nast
 
 Pamiętać przy tym należy, iż programu należy używać wraz z dostarczonym fontem "Zetafonts_-Lovelace_Text_Regular.otf" - jest to font wybrany przez KNCPI i bez niego program nie działa. Font należy umieścić w tym samym miejscu gdzie program.
 
+Uwaga: pliki .exe mogą być nieaktualne w porównaniu do kodu.
+
 mirrory:
 
 https://www.mediafire.com/file/opx6kxtx2ickdzt/AutoCertyfikaty_KNCPI.exe/file     -program
