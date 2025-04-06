@@ -29,7 +29,8 @@ def generate_certificates(input_file, female_template, male_template, offset_x, 
         draw = ImageDraw.Draw(cert_image)
 
         image_width, image_height = cert_image.size  # wielkosc templatu
-        font_size = image_height / 20  # dynamiczna wielkość liter w przypadku obrazów wysokiej jakości
+        font_size = 58 #git dla 1440
+        #image_height / 20  # dynamiczna wielkość liter w przypadku obrazów wysokiej jakości
 
         text = f"{first_name} {last_name}"
         text = text.upper()
@@ -48,14 +49,14 @@ def generate_certificates(input_file, female_template, male_template, offset_x, 
 
         # Rysowanie imienia i nazwiska pogrubionego
         for offset in [(0, 0), (-1, 0), (1, 0), (0, -1), (0, 1)]:
-            draw.text((position[0] + offset[0], position[1] + offset[1]), text, fill="black", font=font)
+            draw.text((position[0] + offset[0], position[1] + offset[1]), text, fill="#2a1713", font=font)
 
 
 
         # Dodaj numer na dole certyfikatu
         if triggerNumering==1:
             number_text = f"NR: {current_number:06}"
-            number_font_size = 18
+            number_font_size = 22
             number_font = ImageFont.truetype(font_path, number_font_size)
             number_position = (90, image_height - 90)
             draw.text(number_position, number_text, fill="lightgray", font=number_font)
