@@ -1,4 +1,7 @@
 # AutoCertyfikat
+
+UWAGA: PLIK EXE JEST NIEAKUTALNY. (działa ale .py jest lepszy)
+
 Program ułatwiający tworzenie wielu spersonalizowanych certyfikatów w python
 Pobierz cały folder "Download this to use the program" i uruchom plik .exe aby natychmiast użyć programu.
 
